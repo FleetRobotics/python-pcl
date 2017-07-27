@@ -1,5 +1,8 @@
 # XXX do a more specific import!
-from ._pcl import *
+try:
+    from ._pcl import *
+except ImportError:
+    from _pcl import *
 
 import sys
 
